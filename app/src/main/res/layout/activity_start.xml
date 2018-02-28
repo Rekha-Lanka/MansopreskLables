@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.training.mansopresk.mansopresklables.StartActivity">
+ <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+  <pl.droidsonroids.gif.GifImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/gifimage"
+      android:scaleType="centerCrop"
+      android:background="@null"
+      android:alpha="0.7"
+      android:src="@drawable/collegegif"/>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="30dp"
+    android:gravity="center"
+    android:orientation="vertical">
+ <Button
+     android:id="@+id/lablebtn"
+     android:layout_width="160dp"
+     android:layout_height="wrap_content"
+     android:text="Lables"
+     android:background="@drawable/buttonstyel"
+     android:textColor="#fff"
+     android:layout_gravity="center"/>
+ <Button
+     android:id="@+id/urlbtn"
+     android:layout_width="160dp"
+     android:layout_gravity="center"
+     android:layout_marginTop="10dp"
+     android:background="@drawable/buttonstyel"
+     android:textColor="#fff"
+     android:layout_height="wrap_content"
+     android:text="URL"/>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:weightSum="2"
+     android:layout_marginTop="10dp"
+     android:orientation="horizontal">
+  <EditText
+      android:id="@+id/mailtv"
+      android:layout_width="200dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content" />
+ <Button
+    android:id="@+id/mailbtn"
+    android:layout_width="160dp"
+     android:layout_weight="1"
+     android:background="@drawable/buttonstyel"
+     android:textColor="#fff"
+    android:layout_height="wrap_content"
+    android:text="Mail Send"/>
+ </LinearLayout>
+ <LinearLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:weightSum="2"
+     android:layout_marginTop="10dp"
+     android:orientation="horizontal">
+  <EditText
+      android:id="@+id/calltv"
+      android:layout_width="200dp"
+      android:layout_weight="1"
+      android:layout_height="wrap_content" />
+ <Button
+     android:id="@+id/callbtn"
+     android:layout_width="160dp"
+     android:layout_gravity="center"
+     android:layout_weight="1"
+     android:background="@drawable/buttonstyel"
+     android:textColor="#fff"
+     android:layout_height="wrap_content"
+     android:text="Call"/>
+ </LinearLayout>
+</LinearLayout>
+ </RelativeLayout>
+</LinearLayout>

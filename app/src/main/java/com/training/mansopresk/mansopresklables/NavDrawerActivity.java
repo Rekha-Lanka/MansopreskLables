@@ -99,8 +99,9 @@ public class NavDrawerActivity extends Activity implements NavigationDrawerFragm
                                  Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_main2, container, false);
             TextView tv=(TextView)rootView.findViewById(R.id.section_label);
-
-
+            SharedPreferences preferences = this.getActivity().getSharedPreferences("UserDetails",MODE_PRIVATE);
+             String s=preferences.getString("username",null);
+             tv.setText(s);
             return rootView;
         }
 
